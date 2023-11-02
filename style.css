@@ -1,0 +1,115 @@
+.hero-container {
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .display-5 {
+    color: white;
+  }
+  
+  .lead {
+    color: white;
+  }
+
+  /* span{
+    color: orange;
+  } */
+
+  .check-star{
+    color: orange;
+  }
+
+  .coin-list{
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    
+ }
+ .coin{
+     display: flex;
+     align-items: center;
+     font-size: 14px;
+     margin: 0 15px;
+     color: orange;
+     border: 1px solid white;
+     padding: 20px 30px;
+     border-radius: 8px;
+ }
+ .coin img{
+     width: 40px;
+     margin-right: 10px;
+ 
+ }.coin h3{
+     color: white;
+     margin-bottom: 5px;
+ }
+
+ header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.icon-square{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+td:first-child svg {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#bitcoin {
+  color: black;
+}
+#ethereum {
+  color: black;
+}
+#solana {
+  color: black;
+}
+#dogecoin {
+  color: black;
+}
+#tether {
+  color: black;
+}
+#cardano {
+  color: black;
+}
+#tron {
+  color: black;
+}
+#chainlink {
+  color: black;
+}
+#polkadot {
+  color: black;
+}
+#litecoin {
+  color: black;
+}
+
+.btn {
+  margin-right: 7px;
+}
+
+.icon-square.active {
+  color: yellow;
+}
+
+
+
+
+
+
