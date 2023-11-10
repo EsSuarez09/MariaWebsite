@@ -108,6 +108,10 @@ td:first-child svg {
   color: yellow;
 }
 
+.rounded-pill{
+  display:none;
+}
+
 
 
 
