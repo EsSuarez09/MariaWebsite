@@ -1,15 +1,15 @@
-
+// create a function fetchData
 function fetchData(){
 // Create a new XMLHttpRequest object
-var xhr = new XMLHttpRequest();
+var req = new XMLHttpRequest();
 
 // Set the request URL and method
-xhr.open("GET", "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Cdogecoin%2Ctether%2Ccardano%2Ctron%2Cchainlink%2Cpolkadot%2Clitecoin&vs_currencies=usd%2Ccad");
+req.open("GET", "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Cdogecoin%2Ctether%2Ccardano%2Ctron%2Cchainlink%2Cpolkadot%2Clitecoin&vs_currencies=usd%2Ccad");
 
 // Define what to do when the request is successful
-xhr.onload = function() {
+req.onload = function() {
   // Parse the response as JSON
-  var response = JSON.parse(xhr.responseText);
+  var response = JSON.parse(req.responseText);
 
   // Get the elements by class name or id
   var btc = document.getElementsByClassName("bitcoin");
@@ -46,14 +46,14 @@ xhr.onload = function() {
 };
 
 // Send the request
-xhr.send();
+req.send();
 }
 
 fetchData();// call the function immediately
 
 //60000 this is for one minute
 
-setInterval(fetchData,60000); // set an interval to call the function every 5 seconds
+setInterval(fetchData,60000); // set an interval to call the function every 1 minute
 
 // select all elements with the class fa and fa-star-o 
 
