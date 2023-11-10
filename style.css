@@ -108,8 +108,12 @@ td:first-child svg {
   color: yellow;
 }
 
-.rounded-pill{
+.rounded-pill1{
   display:none;
+}
+
+.button-container button {
+  visibility: hidden;
 }
 
 

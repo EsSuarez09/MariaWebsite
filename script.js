@@ -104,17 +104,24 @@ fetchData();// call the function immediately
 
 setInterval(fetchData,60000); // set an interval to call the function every 5 seconds
 
+// select all elements with the class fa and fa-star-o 
+
 const starElements = document.querySelectorAll(".fa.fa-star-o");
+
+// iterate through each star element
 
 starElements.forEach(function(starElement){
 
+    // check if the star element has the class check-star
     starElement.addEventListener("click",function(){
        
         if(starElement.classList.contains("check-star")) {
             
+            //if it does, remove the check-star class
             starElement.classList.remove("check-star");
 
         }else{
+            // if it doesn't , add the check-star class
             starElement.classList.add("check-star");
         }
 
@@ -122,30 +129,33 @@ starElements.forEach(function(starElement){
 
 });
 
+// get all elements with the class 'button-container'
 
 var buttonContainer = document.querySelectorAll(".button-container");
 
+//add mouseover and mouseout event to toggle buttons visiblity for each row
 buttonContainer.forEach(function(container){
 
     container.addEventListener("mouseover",function(){ console.log("mouseover");
 
-        toggleButtonVisibility(container,true);
+        toggleButtonVisibility(container,'visible');
 
     });
 
     container.addEventListener("mouseout",function(){
 
-            toggleButtonVisibility(container,false); console.log("mouseout");
+            toggleButtonVisibility(container,'hidden'); console.log("mouseout");
 
     });
 
 })
 
-function toggleButtonVisibility(container, show)
+// function to toggle buttons visibility 
+function toggleButtonVisibility(container, visibility )
 {
     var buttons = container.querySelectorAll('button');
     buttons.forEach(function(button){
-        button.style.display = show ? 'inline-block' : 'none';
+        button.style.visibility  = visibility ;
     });
 
 }
