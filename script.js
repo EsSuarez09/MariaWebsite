@@ -206,4 +206,262 @@ function fetchBitcoin(){
     fetchEthereum();
 
 
+    function fetchSolana(){
+
+      var currentDate = getCurrentDate();
+      // Create a new XMLHttpRequest object
+      var req = new XMLHttpRequest();
+      
+      // Set the request URL and method
+      req.open("GET", "https://api.coingecko.com/api/v3/coins/solana/history?date="+currentDate);
+      
+      // Define what to do when the request is successful
+      req.onload = function() {
+        // Parse the response as JSON
+        var response = JSON.parse(req.responseText);
+      
+        // Get the elements by class name or id
+    
+        var solana24 = document.getElementById("solana-24-hours");
+        var solanamc = document.getElementById("solana-market-cap");
+        
+        
+        solanamc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+    
+        console.log(response);
+       
+      };
+      // Send the request
+      req.send();
+      }
+      
+      fetchSolana();
+
+
+      function fetchDogecoin(){
+
+        var currentDate = getCurrentDate();
+        // Create a new XMLHttpRequest object
+        var req = new XMLHttpRequest();
+        
+        // Set the request URL and method
+        req.open("GET", "https://api.coingecko.com/api/v3/coins/dogecoin/history?date="+currentDate);
+        
+        // Define what to do when the request is successful
+        req.onload = function() {
+          // Parse the response as JSON
+          var response = JSON.parse(req.responseText);
+        
+          // Get the elements by class name or id
+      
+          var dogecoin24 = document.getElementById("dogecoin-24-hours");
+          var dogecoinmc = document.getElementById("dogecoin-market-cap");
+          
+          
+          dogecoinmc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+      
+          console.log(response);
+         
+        };
+        // Send the request
+        req.send();
+        }
+        
+        fetchDogecoin();
+
+
+        function fetchTether(){
+
+          var currentDate = getCurrentDate();
+          // Create a new XMLHttpRequest object
+          var req = new XMLHttpRequest();
+          
+          // Set the request URL and method
+          req.open("GET", "https://api.coingecko.com/api/v3/coins/tether/history?date="+currentDate);
+          
+          // Define what to do when the request is successful
+          req.onload = function() {
+            // Parse the response as JSON
+            var response = JSON.parse(req.responseText);
+          
+            // Get the elements by class name or id
+        
+            var tether24 = document.getElementById("tether-24-hours");
+            var tethermc = document.getElementById("tether-market-cap");
+            
+            
+            tethermc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+        
+            console.log(response);
+           
+          };
+          // Send the request
+          req.send();
+          }
+          
+          fetchTether();
+
+
+          function fetchCardano(){
+
+            var currentDate = getCurrentDate();
+            // Create a new XMLHttpRequest object
+            var req = new XMLHttpRequest();
+            
+            // Set the request URL and method
+            req.open("GET", "https://api.coingecko.com/api/v3/coins/cardano/history?date="+currentDate);
+            
+            // Define what to do when the request is successful
+            req.onload = function() {
+              // Parse the response as JSON
+              var response = JSON.parse(req.responseText);
+            
+              // Get the elements by class name or id
+          
+              var cardano24 = document.getElementById("cardano-24-hours");
+              var cardanomc = document.getElementById("cardano-market-cap");
+              
+              
+              cardanomc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+          
+              console.log(response);
+             
+            };
+            // Send the request
+            req.send();
+            }
+            
+            fetchCardano();
+
+
+            function fetchTron(){
+
+              var currentDate = getCurrentDate();
+              // Create a new XMLHttpRequest object
+              var req = new XMLHttpRequest();
+              
+              // Set the request URL and method
+              req.open("GET", "https://api.coingecko.com/api/v3/coins/tron/history?date="+currentDate);
+              
+              // Define what to do when the request is successful
+              req.onload = function() {
+                // Parse the response as JSON
+                var response = JSON.parse(req.responseText);
+              
+                // Get the elements by class name or id
+            
+                var tron24 = document.getElementById("tron-24-hours");
+                var tronmc = document.getElementById("tron-market-cap");
+                
+                
+                tronmc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+            
+                console.log(response);
+               
+              };
+              // Send the request
+              req.send();
+              }
+              
+              fetchTron();
+
+
+              function fetchChainlink(){
+
+                var currentDate = getCurrentDate();
+                // Create a new XMLHttpRequest object
+                var req = new XMLHttpRequest();
+                
+                // Set the request URL and method
+                req.open("GET", "https://api.coingecko.com/api/v3/coins/chainlink/history?date="+currentDate);
+                
+                // Define what to do when the request is successful
+                req.onload = function() {
+                  // Parse the response as JSON
+                  var response = JSON.parse(req.responseText);
+                
+                  // Get the elements by class name or id
+              
+                  var chainlink24 = document.getElementById("chainlink-24-hours");
+                  var chainlinkmc = document.getElementById("chainlink-market-cap");
+                  
+                  
+                  chainlinkmc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+              
+                  console.log(response);
+                 
+                };
+                // Send the request
+                req.send();
+                }
+                
+                fetchChainlink();
+
+
+                function fetchPolkadot(){
+
+                  var currentDate = getCurrentDate();
+                  // Create a new XMLHttpRequest object
+                  var req = new XMLHttpRequest();
+                  
+                  // Set the request URL and method
+                  req.open("GET", "https://api.coingecko.com/api/v3/coins/polkadot/history?date="+currentDate);
+                  
+                  // Define what to do when the request is successful
+                  req.onload = function() {
+                    // Parse the response as JSON
+                    var response = JSON.parse(req.responseText);
+                  
+                    // Get the elements by class name or id
+                
+                    var polkadot24 = document.getElementById("polkadot-24-hours");
+                    var polkadotmc = document.getElementById("polkadot-market-cap");
+                    
+                    
+                    polkadotmc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+                
+                    console.log(response);
+                   
+                  };
+                  // Send the request
+                  req.send();
+                  }
+                  
+                  fetchPolkadot();
+
+
+
+                  function fetchLitecoin(){
+
+                    var currentDate = getCurrentDate();
+                    // Create a new XMLHttpRequest object
+                    var req = new XMLHttpRequest();
+                    
+                    // Set the request URL and method
+                    req.open("GET", "https://api.coingecko.com/api/v3/coins/litecoin/history?date="+currentDate);
+                    
+                    // Define what to do when the request is successful
+                    req.onload = function() {
+                      // Parse the response as JSON
+                      var response = JSON.parse(req.responseText);
+                    
+                      // Get the elements by class name or id
+                  
+                      var litecoin24 = document.getElementById("litecoin-24-hours");
+                      var litecoinmc = document.getElementById("litecoin-market-cap");
+                      
+                      
+                      litecoinmc.innerHTML = parseFloat(response['market_data']['market_cap']['usd']).toFixed(2);
+                  
+                      console.log(response);
+                     
+                    };
+                    // Send the request
+                    req.send();
+                    }
+                    
+                    fetchLitecoin();
+  
+
+
 
